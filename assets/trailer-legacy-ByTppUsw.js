@@ -1,0 +1,1 @@
+System.register(["./app-legacy-Fps5uHOq.js"],function(e,r){"use strict";var t;return{setters:[e=>{t=e.aN}],execute:function(){e("u",t("trailer",{state:()=>({areTrailersActive:!0}),actions:{activateTrailers(){this.areTrailersActive=!0},deactivateTrailers(){this.areTrailersActive=!1},toggleTrailers(){this.areTrailersActive=!this.areTrailersActive}},persist:!0}))}}});
