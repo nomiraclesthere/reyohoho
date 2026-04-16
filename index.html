@@ -13,16 +13,25 @@
       name="description"
       content="ReYohoho - онлайн поиск и просмотр фильмов и сериалов. Подборки, рейтинги, история просмотра и удобная навигация."
     />
-    <link rel="canonical" href="https://nomiraclesthere.github.io/reyohoho/" />
+    <script>
+      // Динамические URL
+      (function() {
+        var baseUrl = '%BASE_URL%';
+        var normalizedBase = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+        var currentOrigin = window.location.origin;
+        
+        document.write('<link rel="canonical" href="' + currentOrigin + '/" />');
+        document.write('<meta property="og:url" content="' + currentOrigin + '/" />');
+        document.write('<meta property="og:site_name" content="' + window.location.hostname + '" />');
+        document.write('<meta property="og:image" content="' + currentOrigin + '/favicon.ico" />');
+      })();
+    </script>
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://nomiraclesthere.github.io/reyohoho/" />
-    <meta property="og:site_name" content="nomiraclesthere.github.io" />
     <meta property="og:title" content="ReYohoho - онлайн просмотр фильмов и сериалов" />
     <meta
       property="og:description"
       content="ReYohoho - онлайн поиск и просмотр фильмов и сериалов. Подборки, рейтинги, история просмотра и удобная навигация."
     />
-    <meta property="og:image" content="https://nomiraclesthere.github.io/reyohoho/favicon.ico" />
 
     <!-- Иконка и заголовок -->
     <link rel="icon" href="%BASE_URL%favicon.ico" />
